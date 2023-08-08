@@ -15,11 +15,6 @@ const Hero = () => {
           </h1>
         </div>
       </Draggable>
-      <Draggable disabled={!draggable}>
-        <div className="w-10/12 p-6 border-4 border-black rounded-sm shadow-blocks shadow-gray-800 bg-amber-400 lg:w-auto">
-          <img src="C:\Users\ldutrieux\code\site-1\bpaizzld.bmp" alt="Mihawk" />
-        </div>
-      </Draggable>
       <div className="flex flex-col items-center">
         <Draggable disabled={!draggable}>
           <div className="w-10/12 mx-auto sm:w-1/2 mb-4">
