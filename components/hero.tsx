@@ -15,9 +15,11 @@ const Hero = () => {
           </h1>
         </div>
       </Draggable>
-      <div className="w-10/12 p-6 border-4 border-black shadow-blocks shadow-gray-800 bg-[#fb923c] lg:w-auto">
-        <img src="https://media.licdn.com/dms/image/D5603AQFT7KEc4htkjA/profile-displayphoto-shrink_800_800/0/1681150645238?e=1697068800&v=beta&t=fxeWevfcYFg65I-ju4G_roHzgogCQ6h8ftANlrlaeSY" alt="Mihawk" />
-      </div>
+      <Draggable disabled={!draggable}>
+        <div>
+          <img src="https://media.licdn.com/dms/image/D5603AQFT7KEc4htkjA/profile-displayphoto-shrink_800_800/0/1681150645238?e=1697068800&v=beta&t=fxeWevfcYFg65I-ju4G_roHzgogCQ6h8ftANlrlaeSY" alt="Mihawk" width="auto" height="auto"/>
+        </div>
+      </Draggable>
       <div className="flex flex-col items-center">
         <Draggable disabled={!draggable}>
           <div className="w-10/12 mx-auto sm:w-1/2 mb-4">
