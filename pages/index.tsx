@@ -5,12 +5,10 @@ import { GetStaticProps } from 'next'
 
 import Hero from '../components/hero'
 import Email from '../components/email'
-import Community from '../components/community'
 import Workshops from '../components/workshops'
 import HackNight from '../components/hack-night'
 import JoinUs from '../components/join-us'
 import { IEvent } from '../utils/interfaces/SanityEvent'
-
 import {
   DraggableContext,
   DraggableInterface
@@ -90,7 +88,6 @@ const Home: NextPage<HomeFetchedEventsProps> = ({
         <hr className="border-2 border-black border-dashed" />
         <Email />
         <hr className="border-2 border-black border-dashed" />
-        <Community />
         <Workshops
           fetchedEvents={fetchedEvents}
           randomBarCode={randomBarCode}
